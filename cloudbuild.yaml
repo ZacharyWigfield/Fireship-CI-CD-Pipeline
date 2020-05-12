@@ -1,11 +1,10 @@
 steps:
 #install
-- name: node:10.15.1
-  entrypoint: npm
+- name: 'gcr.io/cloud-builders/npm'
   args: ['install']
 
 - name: 'gcr.io/cloud-builders/npm'
-  args: ['install']
+  args: ['install -g update-node']
 
   #test
 - name: 'gcr.io/cloud-builders/npm'
