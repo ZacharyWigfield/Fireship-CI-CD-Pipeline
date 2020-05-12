@@ -3,6 +3,9 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['install']
 
+- name: 'gcr.io/cloud-builders/nvm'
+  args: ['install 12.14.0']
+
   #test
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'test']
