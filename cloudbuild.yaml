@@ -4,7 +4,13 @@ steps:
   args: ['install']
 
 - name: 'gcr.io/cloud-builders/npm'
+  args: ['version']
+
+- name: 'gcr.io/cloud-builders/npm'
   args: ['install', 'g', 'update-node']
+
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['version']
 
   #test
 - name: 'gcr.io/cloud-builders/npm'
